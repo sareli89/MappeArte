@@ -3,7 +3,7 @@ import { useState, UseEffect } from "react";
 import "./App.css";
 import Login from "./pages/Login";
 import UserRegister from "./pages/UserRegister";
-
+import Home from "./pages/Home"
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/UserRegister" element={<UserRegister />} />
+          <Route path="/Home" element={<Home />} />
         </Routes>
       </div>
     </div>

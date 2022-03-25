@@ -5,7 +5,7 @@ const Button = (props) => {
     pink: "bg-rosa",
   };
   return (
-    <button class={`rounded-full ${colorConfig[color]} h-mid w-small lg:w-big mt-8`}>
+    <button className={`rounded-full ${colorConfig[color]} h-mid w-small lg:w-big text-white font-bold mt-8`}>
        {nameButton}
     </button>
   );

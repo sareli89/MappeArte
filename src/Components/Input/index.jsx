@@ -1,13 +1,18 @@
-const Input = () => {
+const Input = props => {
+    const  { labelName, typeInput, inputName, nameTag }  = props
+
     return (
-        <label>
-            <span className="block text-sm font-medium text-white ">Nombre:</span>
+        <div className="mb-8 mt-8 text-left">
+            <label 
+            className="block font-medium text-white ">{labelName}:
+            </label>
             <input
-            type='text'
-            placeholder='Nombre'
+            name={inputName}
+            type={typeInput}
+            placeholder={nameTag}
             className='form-controlw-10 rounded h-mid w-small lg:w-big'
             />
-        </label>
+        </div>
     )
 }
 
