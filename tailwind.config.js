@@ -4,8 +4,8 @@ module.exports = {
     extend: {
       colors: {
         "orange-punch": "#F39B17",
-        rosa: "#E818FA",
-        background: "#04032E",
+        "rosa": "#E818FA",
+        "background": "#04032E",
       },
       width: {
         big: "430px",
