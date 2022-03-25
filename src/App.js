@@ -7,7 +7,7 @@ import Button from "./Components/Button";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-screen">
       <main>
         <div className="container mt-5 d-flex justify-content-center">
           <div className="row col-4">
@@ -20,7 +20,7 @@ function App() {
       </main>
       <div>
         <Routes>
-          <Route path="/Login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/UserRegister" element={<UserRegister />} />
         </Routes>
       </div>
