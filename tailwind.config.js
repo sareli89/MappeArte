@@ -9,6 +9,15 @@ module.exports = {
         'rosa': '#E818FA',
         'background':"#04032E"
       },
+      backgroundImage: {
+        'fondo': "url('https://labahiamasbella.com/wp-content/uploads/2020/01/Mural-misael.jpg')",
+      },
+      extend: {
+        height: {
+          '75': '25rem'
+        }
+      }
+    
     },
   },
   plugins: [],
