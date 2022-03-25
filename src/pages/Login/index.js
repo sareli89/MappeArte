@@ -1,6 +1,6 @@
 const Login = props => {
     return (
-        <div>Hola</div>
+        <div className="text-orange-punch">Hola</div>
     )
 }
 
