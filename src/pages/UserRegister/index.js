@@ -1,6 +1,8 @@
-import api from '../../lib/api'
-import { useState, useEffect } from 'react'
-
+import api from '../../lib/api';
+import { useState, useEffect } from 'react';
+import Button from  '../../Components/Button';
+import Input from '../../Components/Input';
+import OpacityCard from '../../Components/OpacityCard';
 
 const UserRegister = () => {
     const [user, setUser] = useState({})
@@ -20,11 +22,12 @@ const UserRegister = () => {
         
         <div>
             <div className="relative">
+                
                 <img src="https://labahiamasbella.com/wp-content/uploads/2020/01/Mural-misael.jpg" 
                 className="h-75 w-3/5 ml-8"/>
             </div>       
             <div>
-            <div className="w-2/5 h-80 shadow-md rounded bg-background bg-opacity-90 absolute top-20 right-10 ">
+            <div className="w-2/5  shadow-md rounded bg-background bg-opacity-90 absolute top-20 right-10 ">
             <div className="mb-8 mt-8 text-left">
                 <label 
                 className="block font-medium text-white ">Usuario:
@@ -85,13 +88,12 @@ const UserRegister = () => {
                 onChange={newUser}
                 />
             </div>
-                            
-                <button 
-                className="rounded-full bg-rosa h-mid 
-                w-small lg:w-big text-white font-bold mt-8" 
-                onClick={createUser}>
-                    Ingresar
-                </button>            
+                <Button 
+                nameButton="INGRESAR" 
+                color="orange"
+                click={createUser}
+                />           
+                         
                 </div>    
             </div>
            
